@@ -9,7 +9,13 @@ class TestCoinChanger < Minitest::Test  	#create template for test
 	# end
 
 	def test_0_returns_empty_hash
-		assert_equal({},coin_changer(0))
+		cents_received =0
+		assert_equal({},coin_changer(cents_received))
+	end
+
+	def test_greater_than_0_return_true
+		cents_received = 1
+		assert_equal({:penny => 1},coin_changer(cents_received))
 	end
 
 end
