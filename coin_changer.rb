@@ -6,7 +6,14 @@
 
 #build uo your coin changer using tests. commit to git after every test.
 def coin_changer(money)
+	amount=0
 	coins = {}
+		if money. between?(10,24)
+		amount = money/10
+		coins[:dime] = amount
+		money= money - (amount * 10)
+	end
+
 	if money. between?(5,9)
 		coins[:nickle] =1
 		money= money - 5
