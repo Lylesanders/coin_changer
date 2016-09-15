@@ -3,7 +3,10 @@ require_relative "coin_changer.rb"					# point minitest to division.rb
 
 class TestCoinChanger < Minitest::Test  	#create template for test
 
-
+# def test_one_cent
+# 	 assert_equal({quarter:0, dime:0, nickle:0, penny:1}, 
+#      coinchanger(1))
+# end
 
 	def test_0_returns_empty_hash
 		cents_received =0
