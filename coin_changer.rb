@@ -7,6 +7,11 @@
 #build uo your coin changer using tests. commit to git after every test.
 def coin_changer(money)
 	coins = {}
+	if money. between?(5,9)
+		coins[:nickle] =1
+		money= money - 5
+	end
+
 	if money. between?(1,4)
 		coins [:penny]=money
 	else
