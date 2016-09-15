@@ -31,4 +31,9 @@ class TestCoinChanger < Minitest::Test  	#create template for test
 		cents_received = 6
 		assert_equal({:nickle =>1 , :penny =>1}, coin_changer(cents_received))
 	end
+
+	def test_8_cents_returns_3_pennies_1_nickle
+		cents_received = 8
+		assert_equal({:nickle =>1 , :penny =>3}, coin_changer(cents_received))
+	end
 end
