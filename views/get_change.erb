@@ -1,0 +1,8 @@
+Hello <%= name %>. please enter an amount between 1 and 99?
+<form method = "post" action="/change">
+
+	<input type = "number" min = "1" max ="99" name ="change">
+	<input type = "text" name = "retrieved_name" value = <%= name %> hidden>
+	<input type = "submit">
+</form>
+
