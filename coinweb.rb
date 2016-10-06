@@ -24,4 +24,11 @@ post '/change' do
  	#{}"Hello #{name} you entered #{change}"
  		coins = coin_sorter(cents.to_i)
 	"Well #{name}, you gave me #{cents} cents, and I can return that to you in #{coins}"
+	if coins[quarter]=1
+		"#{coin[quarter] Quarter}"
+	end
+	if coins[quarter]>1
+		"#{coin[quarter]}, Quarters"
+	end
+
 end
